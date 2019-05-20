@@ -4,3 +4,9 @@
 
 <%= "I love " + "Ruby!!" %>
 <%= 1+1 %>
+
+<% if logged_in? %>
+  <a href="/logout">Click here to Log Out</a>
+<% else %>
+  <a href="/login">Click here to Log In</a>
+<% end %>
